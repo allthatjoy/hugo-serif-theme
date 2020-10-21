@@ -1,5 +1,5 @@
 // Colors
-$primary: #f24088;
+$primary: #299de2;
 $secondary: #f88379;
 $black: #2f2f41;
 $white: #ffffff;
@@ -82,10 +82,10 @@ body:after {
   width: 200px;
   z-index: 9999;
   border: solid 1px #000000;
-  @each $name, $value in $grid-breakpoints {
-    @include media-breakpoint-up($name) {
-      content: '#{$name} - min-width: #{$value}';
-    }
-  }
+  // @each $name, $value in $grid-breakpoints {
+  //   @include media-breakpoint-up($name) {
+  //     content: '#{$name} - min-width: #{$value}';
+  //   }
+  // }
 }
 {{ end }}
